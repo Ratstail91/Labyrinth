@@ -1,0 +1,6 @@
+[submodule "bin"]
+	path = bin
+	url = https://github.com/krgamestudios/bin.git
+[submodule "src/TurtleGUI"]
+	path = src/TurtleGUI
+	url = https://github.com/krgamestudios/TurtleGUI.git
