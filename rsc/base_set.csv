@@ -14,7 +14,7 @@ encounter;Goblin Band;There are 1d4+1 goblins here./ /Treasure: 1sp per goblin d
 
 encounter;Bugbear Band;There are 1d4+1 bugbears here./ /Treasure: 4sp per bugbear defeated.;0;1;5;2
 
-encounter;Giant Floating Eyeball;There is 1 giant floating eyeball here./ /Treasure: 10sp for defeating the eyeball monster./ /Stairs: If you defeat it, you've found a stairwell.;0;1;5;1
+encounter;Giant Floating Eyeball;There is 1 giant floating eyeball here./ /Treasure: 10sp for defeating the eyeball monster./ /Stairs: If you defeat it, you've found a stairwell.;0;1;2;1
 
 #levels 3 - 5
 
@@ -28,7 +28,11 @@ encounter;Goblin War Party;There are 1d6 goblins and 1 Bugbear here./ /Treasure:
 
 encounter;Kobold War Party;There are 1d6 kobolds and 1 Bugbear here./ /Treasure: 1sp per kobold defeated; 4sp per bugbear defeated.;0;3;5;2
 
-encounter;Dire Rat;There is 1 dire rat here./ /Treasure: 10sp for defeating the dire rat./ /Stairs: If you defeat it, you've found a stairwell.;0;3;5;1
+encounter;Dire Rat;There is 1 dire rat here./ /Treasure: 10sp for defeating the dire rat./ /Stairs: If you defeat it, you've found a stairwell.;0;3;4;1
+
+#level 5
+
+encounter;Dragon;There is 1 dragon here./ /Treasure: 30sp for defeating the dragon./ /Stairs: If you defeat it, you may return to town.;0;5;5;2
 
 #-------------------------
 #items
