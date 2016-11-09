@@ -132,18 +132,19 @@ void renderTradingCard(SDL_Renderer* const renderer, TradingCard* card, TTF_Font
 	}
 
 	//cost
-	if (card->GetType() == TradingCard::Type::ITEM || true) {
+	if (card->GetType() == TradingCard::Type::ITEM) {
 		char tmpcstr[16];
-		renderTextDirect(renderer, headerFont, BLACK, itoa(card->GetCost(), tmpcstr, 10), 25, 494);
+		itoa(card->GetCost(), tmpcstr, 10);
+		renderTextDirect(renderer, headerFont, BLACK, std::string() + "Cost: " + tmpcstr, 25, 494);
 	}
 
 	char tmpcstr[16];
 
-	//lower
-	renderTextDirect(renderer, headerFont, BLACK, itoa(card->GetLower(), tmpcstr, 10), 25 + 40, 494);
+	//lower & upper levels
+	std::string lower = itoa(card->GetLower(), tmpcstr, 10);
+	std::string upper = itoa(card->GetUpper(), tmpcstr, 10);
 
-	//upper
-	renderTextDirect(renderer, headerFont, BLACK, itoa(card->GetUpper(), tmpcstr, 10), 25 + 80, 494);
+	renderTextDirect(renderer, headerFont, BLACK, std::string() + "Levels: " + lower + "-" + upper , 220, 494);
 
 	//cleanup
 	SDL_SetRenderTarget(renderer, nullptr);
