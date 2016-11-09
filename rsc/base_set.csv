@@ -1,29 +1,55 @@
-encounter;name;text;1;2;3;4
-encounter;name;text;2;2;3;4
-encounter;name;text;3;2;3;4
-encounter;name;text;4;2;3;4
-encounter;name;text;5;2;3;4
-encounter;name;text;6;2;3;4
-encounter;name;text;7;2;3;4
-encounter;name;text;8;2;3;4
-encounter;name;text;9;2;3;4
-encounter;name;text;10;2;3;4
-encounter;name;text;11;2;3;4
-encounter;name;text;12;2;3;4
-encounter;name;text;13;2;3;4
-encounter;name;text;14;2;3;4
-encounter;name;text;15;2;3;4
-encounter;name;text;16;2;3;4
-encounter;name;text;17;2;3;4
-encounter;name;text;18;2;3;4
-encounter;name;text;19;2;3;4
-encounter;name;text;20;2;3;4
-encounter;name;text;21;2;3;4
-encounter;name;text;22;2;3;4
-encounter;name;text;23;2;3;4
-encounter;name;text;24;2;3;4
-encounter;name;text;25;2;3;4
-encounter;name;text;26;2;3;4
-encounter;name;text;27;2;3;4
-encounter;name;text;28;2;3;4
-encounter;name;text;29;2;3;4
+#Format: type;name;text;cost;lower;upper;copies
+
+#-------------------------
+#encounters
+#-------------------------
+
+#levels 1 - 5
+
+encounter;Treasure Chest;There is a treasure chest in this room. When a/player opens it, roll 1d4. On a 1, it is trapped,/and that player takes 1d4 damage. Otherwise you/find 1d6 sp.;0;1;5;3
+
+encounter;Empty Room;This is an empty room.;0;1;5;1
+
+encounter;Goblin Band;There are 1d4+1 goblins here./ /Treasure: 1sp per goblin defeated.;0;1;5;3
+
+encounter;Bugbear Band;There are 1d4+1 bugbears here./ /Treasure: 4sp per bugbear defeated.;0;1;5;2
+
+encounter;Giant Floating Eyeball;There is 1 giant floating eyeball here./ /Treasure: 10sp for defeating the eyeball monster./ /Stairs: If you defeat it, you've found a stairwell.;0;1;5;1
+
+#levels 3 - 5
+
+encounter;Kobold Band;There are 1d4+1 kobolds here./ /Treasure: 1sp per kobold defeated.;0;3;5;3
+
+encounter;Trapped Doorway;For each player, roll 1d4. That player takes that/much damage. Otherwise, treat this room as an/empty room.;0;3;5;1
+
+encounter;Empty Room;This is an empty room.;0;3;5;1
+
+encounter;Goblin War Party;There are 1d6 goblins and 1 Bugbear here./ /Treasure: 1sp per goblin defeated; 4sp per bugbear defeated.;0;3;5;2
+
+encounter;Kobold War Party;There are 1d6 kobolds and 1 Bugbear here./ /Treasure: 1sp per kobold defeated; 4sp per bugbear defeated.;0;3;5;2
+
+encounter;Dire Rat;There is 1 dire rat here./ /Treasure: 10sp for defeating the dire rat./ /Stairs: If you defeat it, you've found a stairwell.;0;3;5;1
+
+#-------------------------
+#items
+#-------------------------
+
+#levels 1 - 5
+
+item;Rations;You may expend rations in an empty room to/regain 1d4 health points.;3;1;5;5
+
+item;Medical Supplies;You may expend medical supplies in an empty/room to regain 3d4 health points.;12;1;5;1
+
+item;Treasure Hoard;Each player gains 5sp. This card cannot be sold.;0;1;5;2
+
+item;Dragon Statue;You may roll a d6. On a-/1. You die/2. you may increase a base stat by 1/3. you must decrease a base stat by 1//4. You may switch the value of your luck stat/with another stat./5. Your maximum health points increases by 1d4/+ your luck modifier./6. Your maximum armour points increases by 1d4/+ your luck modifier.;0;1;5;1
+
+item;Cursed Ring;This item is automatically equipped, and cannot/be removed without a wizard. A wizard can be/found in town./ /You lose 1 point from each stat.;10;1;5;1
+
+#levels 2 - 5
+
+item;Kobold Knife;This equipment grants +1 to strength and -1 to/intelligence./ /Damage die: 1d6;5;2;5;2
+
+item;Brainsucker Stick;This equipment grants +1 to intelligence and -1/to strength./ /Damage die: 1d8;5;2;5;2
+
+item;Sureshot Shooter;This equipment grants +X to attack when/equiped by an Archer, where X is your luck stat./ /Damage die: 1d8;10;2;5;1
